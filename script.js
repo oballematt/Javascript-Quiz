@@ -76,3 +76,12 @@ var questions = [
     },
 
 ]
+
+start.addEventListener("click", startGame)
+choiceA.addEventListener('click', checkAnswer)
+choiceB.addEventListener('click', checkAnswer)
+choiceC.addEventListener('click', checkAnswer)
+choiceD.addEventListener('click', checkAnswer)
+next.addEventListener("click", nextQuestion)
+submit.addEventListener("click", highScore)
+finish.addEventListener('click', finishQuiz)
