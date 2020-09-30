@@ -120,3 +120,28 @@ function startGame() {
     showQuestions()
     setTime()
 }
+
+unction showQuestions() {
+    var q = questions[currentQuestionIndex]
+    quiz.innerText = q.question
+    choiceA.innerText = q.choiceA
+    choiceB.innerText = q.choiceB
+    choiceC.innerText = q.choiceC
+    choiceD.innerText = q.choiceD
+    
+
+   
+}
+
+function nextQuestion() {
+    currentQuestionIndex++
+    showQuestions()
+    isCorrect.textContent = ""
+    clicked = false
+    if (currentQuestionIndex === 4){
+        next.classList.add("hide")
+        finish.classList.remove("hide")
+        
+
+    }
+}
