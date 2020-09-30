@@ -20,3 +20,59 @@ var input = document.getElementById("highscores")
 var score = 0
 var timer = 500
 var clicked = false
+
+var currentQuestionIndex = 0
+
+var questions = [
+    {
+        question: "Commonly used data types DO NOT include:",
+        choiceA: "strings",
+        choiceB: "booleans",
+        choiceC: "alerts",
+        choiceD: "numbers",
+        correct: "C",
+
+
+    },
+    {
+        question: "The condition in an if/else statement is enclosed within ______.:",
+        choiceA: "quotes",
+        choiceB: "curly brackets",
+        choiceC: "parenthesis",
+        choiceD: "square brackets",
+        correct: "C",
+
+    },
+    {
+        question: "Arrays in JavaScript can be used to store ___:",
+        choiceA: "numbers and strings",
+        choiceB: "other arrays",
+        choiceC: "booleans",
+        choiceD: "all of the above",
+        correct: "D",
+
+
+    },
+    {
+        question: "String values must be enclosed within ____ when being assigned to variables:",
+        choiceA: "quotes",
+        choiceB: "commas",
+        choiceC: "curly brackets",
+        choiceD: "parenthesis",
+        correct: "A",
+
+
+    },
+    {
+        question: "A very useful tool used during developement and debugging for printing content to the debugger is:",
+        choiceA: "console.log",
+        choiceB: "Javascript",
+        choiceC: "for loops",
+        choiceD: "terimnal/bash",
+        correct: "A",
+
+
+
+    },
+
+]
