@@ -85,3 +85,17 @@ choiceD.addEventListener('click', checkAnswer)
 next.addEventListener("click", nextQuestion)
 submit.addEventListener("click", highScore)
 finish.addEventListener('click', finishQuiz)
+
+
+function setTime() {
+    var timerInterval = setInterval(function () {
+        timer--;
+        time.textContent = "Time: " + timer;
+
+        if (timer <= 0) {
+            clearInterval(timerInterval);
+            finishQuiz();
+        }
+
+    }, 1000);
+}
