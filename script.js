@@ -18,7 +18,7 @@ var submit = document.getElementById("submit")
 var initial = document.getElementById("initial")
 var input = document.getElementById("highscores")
 var score = 0
-var timer = 500
+var timer = 60
 var clicked = false
 
 var currentQuestionIndex = 0
@@ -98,4 +98,25 @@ function setTime() {
         }
 
     }, 1000);
+}
+
+function finishQuiz() {
+    quiz.classList.add("hide")
+    finished.classList.remove("hide")
+    choices.classList.add("hide")
+    score1.textContent = "Your final score is: " + score
+    timer = 0
+    
+}
+
+
+
+function startGame() {
+    start.classList.add("hide")
+    startPage.classList.add("hide")
+    quiz.classList.remove("hide")
+    choices.classList.remove("hide")
+    next.classList.remove("hide")
+    showQuestions()
+    setTime()
 }
