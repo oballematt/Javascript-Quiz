@@ -12,3 +12,5 @@ If user answers question incorrectly, their timer will be deducted by 5 seconds
 If time runs out or user answers last question, the quiz will be over and you will be presented with a page that displays your total score and allows you to submit you initials along with your score.
 
 Initials and score will then be diplayed on a highscore page
+
+https://oballematt.github.io/Javascript-Quiz/
