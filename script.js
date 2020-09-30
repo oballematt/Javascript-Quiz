@@ -121,7 +121,7 @@ function startGame() {
     setTime()
 }
 
-unction showQuestions() {
+function showQuestions() {
     var q = questions[currentQuestionIndex]
     quiz.innerText = q.question
     choiceA.innerText = q.choiceA
@@ -144,4 +144,23 @@ function nextQuestion() {
         
 
     }
+}
+
+function checkAnswer(answer) {
+    if (!clicked) {
+        clicked = true;
+
+        if (questions[currentQuestionIndex].correct == answer) {
+            score += 5
+            isCorrect.textContent = "Correct"
+            
+
+        }
+        else {
+            isCorrect.textContent = "Wrong"
+            timer -= 5
+
+        }
+    }
+    scoreDisplay.textContent = "Score: " + score
 }
