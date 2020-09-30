@@ -164,3 +164,22 @@ function checkAnswer(answer) {
     }
     scoreDisplay.textContent = "Score: " + score
 }
+
+function highScore() {
+    highscores.classList.remove("hide")
+    quiz.classList.add("hide")
+    finished.classList.add("hide")
+    choices.classList.add("hide")
+    saveInput()
+
+}
+
+function saveInput(){
+    var initials = initial.value.trim()
+    localStorage.setItem("initial", initials)
+    console.log(initials)
+    localStorage.setItem("score", score)
+    console.log(score)
+  
+    
+}
